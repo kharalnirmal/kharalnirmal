@@ -1,4 +1,4 @@
-#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-30 21:08:25
+
 <!-- <div align="center" style="margin-top: 20px;">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,50:00d2ff,100:ffffff&height=6&width=800" />
 </div> -->
@@ -76,6 +76,7 @@
 
 <div align="center">
   <p>Discover my work and connect on these platforms!</p> 
+ <p> I love building creative projects. [copyright-area]</p>
   <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
     <a href="https://fb.com/last.knight.12935" target="blank">
       <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
@@ -125,4 +126,4 @@
 
 
 
-#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-30 21:19:31
+
