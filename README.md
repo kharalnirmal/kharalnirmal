@@ -8,15 +8,25 @@
 </div>
 
 <div align="center">
-  <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/nirmalkharal" target="blank">
-    <img src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://fb.com/last.knight.12935" target="blank">
-    <img src="https://img.shields.io/badge/-Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+          <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="35" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://instagram.com/nirmalkharal" target="blank">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="35" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://fb.com/last.knight.12935" target="blank">
+          <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="35" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <p align="center">
@@ -42,7 +52,7 @@
       </ul>
     </td>
     <td width="40%" align="center">
-      <img alt="coding" width="350" src="https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif">
+      <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
     </td>
   </tr>
 </table>
@@ -94,7 +104,7 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/GrahamTheDevRel/GrahamTheDevRel/raw/main/readme/hero.svg" width="100%" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxx8721XWv6/giphy.gif" width="100%" />
 </div>
 
 <p align="center">
