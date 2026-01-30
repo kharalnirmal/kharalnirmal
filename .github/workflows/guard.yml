@@ -1,6 +1,6 @@
 name: Guard My Profile
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -9,16 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Update Timestamp
+      - name: Update README
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
           TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
-          # This 'sed' command is the safest version possible
-          sed -i "s|TIMESTAMP_HERE|$TEXT|g" README.md
+          # This replaces everything between the comments without using 'sed' logic
+          perl -i -0777 -pe "s/.*/\n$TEXT\n/s" README.md
       - name: Save Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Guard-Bot"
           git add README.md
-          git commit -m "Guard-Bot: Ownership Verified" || echo "Nothing to update"
+          git commit -m "Guard-Bot: Ownership Verified" || echo "No changes"
           git push
