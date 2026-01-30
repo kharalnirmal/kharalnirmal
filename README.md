@@ -101,7 +101,7 @@
     width="300px"
     style="display:block; margin: 0 auto -120px;"
   />
-  <picture style="display:block;">
+  <!-- <picture style="display:block;">
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
     <img
@@ -109,7 +109,7 @@
       src="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg"
       style="display:block;"
     />
-  </picture>
+  </picture> -->
 </div>
 
 
