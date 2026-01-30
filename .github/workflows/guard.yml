@@ -12,9 +12,8 @@ jobs:
       - name: Update README
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
-          TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
-          # This replaces everything between the comments without using 'sed' logic
-          perl -i -0777 -pe "s/.*/\n$TEXT\n/s" README.md
+          # This version ONLY appends to the bottom, it cannot delete anything!
+          echo -e "\n#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME" >> README.md
       - name: Save Changes
         run: |
           git config --local user.email "action@github.com"
