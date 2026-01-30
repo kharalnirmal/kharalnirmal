@@ -71,7 +71,7 @@
 
 <hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
-### 🤝 Connect & Collaborate (Bento Grid)
+### 🤝 Connect & Collaborate 
 
 <div align="center">
   <p>Discover my work and connect on these platforms!</p> 
@@ -85,8 +85,8 @@
     <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
       <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
     </a>
-    <a href="https://github.com/kharalnirmal" target="blank">
-      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fgithub.com%2Fkharalnirmal&subtitle=%2Fkharalnirmal&size=square" width="150" />
+    <a href="https://nirmalkharal.tech" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/generic-card?icon=siaboutdotme&subtitle=Portfolio&size=square" width="150" />
     </a>
   </div>
 </div>
