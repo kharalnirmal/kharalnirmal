@@ -1,0 +1,25 @@
+name: Guard My Profile
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update Timestamp
+        run: |
+          TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
+          TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
+          sed -i "//,//c\\n$TEXT\n" README.md
+      - name: Save Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Guard-Bot"
+          git add README.md
+          git commit -m "Guard-Bot: Ownership Verified" || exit 0
+          git push
