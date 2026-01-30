@@ -1,32 +1,106 @@
 
-<h1 align="center">Hi 👋, I'm Nirmal Kharal</h1>
-<h3 align="center">A passionate frontend developer</h3>
-<img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif">
+<div align="center">
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=300&section=header&text=Nirmal%20Kharal&fontSize=90&animation=fadeIn&fontAlignY=38" />
+</div>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat" alt="nirmal-kharal" /> </p>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=435&lines=Fullstack+Developer;Next.js+Architect;Open+Source+Enthusiast;Building+the+Web+of+2026" alt="Typing SVG" />
+</div>
 
-- 🌱 I’m currently learning **MERN**
-
-- 💬 Ask me about **HTML,CSS,JAVASCRIPT**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nirmal-kharal-37659a2a1" height="30" width="40" /></a>
-<a href="https://fb.com/last.knight.12935" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="last.knight.12935" height="30" width="40" /></a>
-  <svg xmlns="http://www.w3.org/2000/svg" width="256" height="226" preserveAspectRatio="xMidYMid" viewBox="0 0 256 226"><path fill="#1185FE" d="M55.491 15.172c29.35 22.035 60.917 66.712 72.509 90.686 11.592-23.974 43.159-68.651 72.509-90.686C221.686-.727 256-13.028 256 26.116c0 7.818-4.482 65.674-7.111 75.068-9.138 32.654-42.436 40.983-72.057 35.942 51.775 8.812 64.946 38 36.501 67.187-54.021 55.433-77.644-13.908-83.696-31.676-1.11-3.257-1.63-4.78-1.637-3.485-.008-1.296-.527.228-1.637 3.485-6.052 17.768-29.675 87.11-83.696 31.676-28.445-29.187-15.274-58.375 36.5-67.187-29.62 5.041-62.918-3.288-72.056-35.942C4.482 91.79 0 33.934 0 26.116 0-13.028 34.314-.727 55.491 15.172Z"/></svg>
-<a href="https://instagram.com/nirmalkharal" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nirmalkharal" height="30" width="40" /></a>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+---
 
+### 🚀 About Me
 
+<table border="0">
+  <tr>
+    <td width="60%">
+      <p>
+        I am a <b>Fullstack Developer</b> passionate about creating seamless digital experiences. 
+        Transitioning from frontend expertise to building full-scale, type-safe applications with the latest technologies.
+      </p>
+      <ul>
+        <li>🔭 Currently architecting <b>Fullstack Solutions</b></li>
+        <li>🌱 Deep diving into <b>Next.js 15, Prisma, and Drizzle</b></li>
+        <li>💬 Ask me about <b>State Management (Zustand) or Schema Validation (Zod)</b></li>
+        <li>⚡ Fun fact: I believe <b>TypeScript</b> is the superpower of modern web.</li>
+      </ul>
+    </td>
+    <td width="40%" align="center">
+      <img alt="coding" width="350" src="https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif">
+    </td>
+  </tr>
+</table>
 
+---
 
+### 🛠️ Tech Stack & Ecosystem
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
-</picture>
+<div align="center">
+  
+  #### 🌐 Frontend
+  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,js,html,css&theme=dark" />
+  
+  #### ⚙️ Backend & Database
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgres,mysql,prisma,supabase&theme=dark" />
+  
+  #### 🧰 Tools & State
+  <img src="https://skillicons.dev/icons?i=git,github,figma,postman,vscode,npm,pnpm&theme=dark" />
 
+  <br>
+  
+  **Powering with:** 
+  `Zustand` • `Drizzle ORM` • `Zod` • `Prisma` • `React Query`
+</div>
+
+---
+
+### 📊 Performance Metrics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Nirmal-Kharal&show_icons=true&theme=transparent&title_color=00d2ff&text_color=ffffff&icon_color=00d2ff&hide_border=true&count_private=true" alt="Nirmal's GitHub stats" />
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nirmal-Kharal&layout=compact&theme=transparent&title_color=00d2ff&text_color=ffffff&hide_border=true" alt="Top Languages" />
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nirmal-Kharal&theme=transparent&stroke=00d2ff&fire=00d2ff&ring=00d2ff&currStreakLabel=00d2ff&hide_border=true" alt="GitHub Streak" />
+</div>
+
+---
+
+### 🐍 The Classic Snake
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
+  </picture>
+</div>
+
+---
+
+### 🤝 Connect & Collaborate
+
+<div align="center">
+  <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/nirmalkharal" target="blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://fb.com/last.knight.12935" target="blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=slice&color=00d2ff&height=100&section=footer" />
+</p>
