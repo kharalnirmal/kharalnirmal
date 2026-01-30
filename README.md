@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&colorA=ffffff&colorB=00d2ff&colorC=cccccc" width="100%">
 </div>
 
 <div align="center">
@@ -13,13 +13,13 @@
 
 <img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
-### 🚀 About Me: The Fullstack Alchemist
+### 🚀 About Me
 
 <table border="0">
   <tr>
     <td width="60%">
       <p>
-        I am a <b>Fullstack Alchemist</b>, transforming ideas into robust, scalable digital gold. My journey has evolved from mastering the frontend craft to architecting complete, type-safe solutions that define the future of web development. I thrive on the challenge of building end-to-end applications that are not just functional, but truly exceptional.
+        I am a <b>Fullstack Developer</b> focused on building robust and scalable web applications. My expertise lies in creating end-to-end, type-safe solutions using modern JavaScript frameworks and databases. I am passionate about clean code and efficient architecture.
       </p>
       <ul>
         <li>🔭 Currently focused on **Fullstack Architecture** and **Performance Optimization**.</li>
@@ -84,18 +84,6 @@
 
 <img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
-### 📊 Performance Metrics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kharalnirmal&show_icons=true&theme=tokyonight&title_color=00d2ff&text_color=ffffff&icon_color=00d2ff&hide_border=true&count_private=true" alt="Nirmal's GitHub stats" />
-  <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kharalnirmal&layout=compact&theme=tokyonight&title_color=00d2ff&text_color=ffffff&hide_border=true" alt="Top Languages" />
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kharalnirmal&theme=tokyonight&stroke=00d2ff&fire=00d2ff&ring=00d2ff&currStreakLabel=00d2ff&hide_border=true" alt="GitHub Streak" />
-</div>
-
-<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
-
 ### 🐍 The Classic Snake
 <div align="center">
   <picture>
@@ -113,9 +101,5 @@
 </div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=00d2ff&height=110&section=footer" />
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=36BCF7&height=110&section=footer" />
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer" width="100%">
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer&colorA=ffffff&colorB=00d2ff&colorC=cccccc" width="100%">
 </div>
