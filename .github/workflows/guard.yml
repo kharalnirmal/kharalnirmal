@@ -13,7 +13,7 @@ jobs:
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
           TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
-          # We use '|' instead of '/' so the URL doesn't break the command
+          # Using | instead of / prevents the 'unknown option' error
           sed -i "s|TIMESTAMP_HERE|$TEXT|g" README.md
       - name: Save Changes
         run: |
