@@ -45,7 +45,7 @@
 
 <hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="27"><i> Tech Stack & Ecosystem: </i>
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="28"><i> Tech Stack & Ecosystem: </i>
 
 <!-- <div align="left">
   <img src="https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/assets/strange.png" width="80" />
