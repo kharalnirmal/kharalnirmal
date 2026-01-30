@@ -13,7 +13,7 @@ jobs:
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
           TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
-          # Using | instead of / prevents the 'unknown option' error
+          # This 'sed' command is the safest version possible
           sed -i "s|TIMESTAMP_HERE|$TEXT|g" README.md
       - name: Save Changes
         run: |
