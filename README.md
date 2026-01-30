@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&colorA=ffffff&colorB=00d2ff&colorC=cccccc" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&colorA=ffffff&colorB=00d2ff&colorC=cccccc&animation=fadeIn" width="100%">
 </div>
 
 <div align="center">
@@ -11,30 +11,35 @@
   <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
 </p>
 
-<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
+<hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
-### <img align='left' src="https://media.tenor.com/fOD0TBLKQg8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="40px"> About Me
+<div align="center">
+  <table border="0" style="width: 100%;">
+    <tr>
+      <td colspan="2" style="text-align: left;">
+        <h3><img align='left' src="https://media.tenor.com/fOD0TBLKQg8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="40px"> About Me</h3>
+      </td>
+    </tr>
+    <tr>
+      <td width="60%" style="vertical-align: top; padding-right: 20px;">
+        <p>
+          I am a <b>Fullstack Developer</b> dedicated to creating seamless and scalable digital experiences. My focus is on building robust, type-safe applications from end-to-end using the latest technologies. I am passionate about efficient architecture and delivering high-quality code that solves real-world problems.
+        </p>
+        <ul>
+          <li>Currently architecting **Fullstack Solutions** and optimizing performance.</li>
+          <li>Deep diving into **Next.js 15, Prisma, and Drizzle** for modern web services.</li>
+          <li>Let's discuss **State Management (Zustand), Schema Validation (Zod)**, or serverless technology.</li>
+          <li>Fun fact: I believe **TypeScript** is the superpower that keeps the multiverse of code stable.</li>
+        </ul>
+      </td>
+      <td width="40%" align="center" style="vertical-align: top;">
+        <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
+      </td>
+    </tr>
+  </table>
+</div>
 
-<table border="0">
-  <tr>
-    <td width="60%">
-      <p>
-        I am a <b>Fullstack Developer</b> dedicated to creating seamless and scalable digital experiences. My focus is on building robust, type-safe applications from end-to-end using the latest technologies. I am passionate about efficient architecture and delivering high-quality code that solves real-world problems.
-      </p>
-      <ul>
-        <li>🔭 Currently architecting **Fullstack Solutions** and optimizing performance.</li>
-        <li>🌱 Deep diving into **Next.js 15, Prisma, and Drizzle** for modern web services.</li>
-        <li>💬 Let's discuss **State Management (Zustand), Schema Validation (Zod)**, or serverless technology.</li>
-        <li>Fun fact: I believe **TypeScript** is the superpower that keeps the multiverse of code stable.</li>
-      </ul>
-    </td>
-    <td width="40%" align="center">
-      <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
-    </td>
-  </tr>
-</table>
-
-<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
+<hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="27"><i> Tech Stack & Ecosystem: </i>
 
@@ -60,7 +65,7 @@
   `Zustand` • `Drizzle ORM` • `Zod` • `Prisma` • `React Query`
 </div>
 
-<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
+<hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
 ### 🤝 Connect & Collaborate (Bento Grid)
 
@@ -82,9 +87,12 @@
   </div>
 </div>
 
-<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
+<hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
-### 🐍 The Classic Snake
+<div align="center">
+  <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px" style="position: relative; z-index: 2;" >
+</div>
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
@@ -93,12 +101,6 @@
   </picture>
 </div>
 
-<br>
-
-<div align="center" style="position: relative;">
-  <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px" style="position: relative; z-index: 2;" >
-</div>
-
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer&colorA=ffffff&colorB=00d2ff&colorC=cccccc" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer&colorA=ffffff&colorB=00d2ff&colorC=cccccc&animation=fadeIn" width="100%">
 </div>
