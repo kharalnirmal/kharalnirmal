@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -12,8 +14,9 @@ jobs:
       - name: Update README
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
-          # This version ONLY appends to the bottom, it cannot delete anything!
-          echo -e "\n#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME" >> README.md
+          TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
+          # This finds the secret word and replaces it with your name
+          sed -i "s|\[copyright-area\]|$TEXT|g" README.md
       - name: Save Changes
         run: |
           git config --local user.email "action@github.com"
