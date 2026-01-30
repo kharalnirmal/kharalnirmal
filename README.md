@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=300&section=header&text=Nirmal%20Kharal&fontSize=90&animation=fadeIn&fontAlignY=38" />
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
 </div>
 
 <div align="center">
@@ -73,11 +73,11 @@
 ### 📊 Performance Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nirmal-Kharal&show_icons=true&theme=transparent&title_color=00d2ff&text_color=ffffff&icon_color=00d2ff&hide_border=true&count_private=true" alt="Nirmal's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=kharalnirmal&show_icons=true&theme=tokyonight&title_color=00d2ff&text_color=ffffff&icon_color=00d2ff&hide_border=true&count_private=true" alt="Nirmal's GitHub stats" />
   <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nirmal-Kharal&layout=compact&theme=transparent&title_color=00d2ff&text_color=ffffff&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kharalnirmal&layout=compact&theme=tokyonight&title_color=00d2ff&text_color=ffffff&hide_border=true" alt="Top Languages" />
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nirmal-Kharal&theme=transparent&stroke=00d2ff&fire=00d2ff&ring=00d2ff&currStreakLabel=00d2ff&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kharalnirmal&theme=tokyonight&stroke=00d2ff&fire=00d2ff&ring=00d2ff&currStreakLabel=00d2ff&hide_border=true" alt="GitHub Streak" />
 </div>
 
 ---
@@ -94,7 +94,7 @@
 <br>
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600" />
 </div>
 
 <p align="center">
