@@ -15,7 +15,7 @@
   <table border="0" style="width: 100%;">
     <tr>
       <td colspan="2" style="text-align: left;">
-        <h3><img align='left' src="https://media.tenor.com/fOD0TBLKQg8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="40px"> About Me</h3>
+        <img align='left' src="https://media.tenor.com/fOD0TBLKQg8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="60px"><h3> About Me</h3>
       </td>
     </tr>
     <tr>
