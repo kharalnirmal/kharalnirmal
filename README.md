@@ -1,10 +1,6 @@
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/render?type=waving&color=36BCF7&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
-    <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header" width="100%">
 </div>
 
 <div align="center">
@@ -12,15 +8,31 @@
 </div>
 
 <div align="center">
-  <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/nirmalkharal" target="blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://fb.com/last.knight.12935" target="blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
+  <p>Discover my work and connect on these platforms!</p>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://fb.com/last.knight.12935" target="blank">
+          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://instagram.com/nirmalkharal" target="blank">
+          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.instagram.com%2Fnirmalkharal%2F&subtitle=@nirmalkharal&size=square" width="150" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/kharalnirmal" target="blank">
+          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fgithub.com%2Fkharalnirmal&subtitle=%2Fkharalnirmal&size=square" width="150" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <p align="center">
@@ -53,7 +65,7 @@
 
 <img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
-### 🛠️ Tech Stack & Ecosystem
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="27"><i> Tech Stack & Ecosystem: </i>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/assets/strange.png" width="80" />
@@ -103,9 +115,13 @@
 <br>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l36kU80xPf0ojG0og/giphy.gif" width="400" />
+  <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px"  >
 </div>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=slice&color=00d2ff&height=100&section=footer" />
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=00d2ff&height=110&section=footer" />
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=36BCF7&height=110&section=footer" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer" width="100%">
+  </picture>
+</div>
