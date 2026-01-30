@@ -3,20 +3,18 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Update README
+      - name: Add Ownership to Bottom
         run: |
           TIME=$(date -u -d "+5 hours +45 minutes" +"%Y-%m-%d %H:%M:%S")
           TEXT="#### 🕒 Verified Original Design: Nirmal Kharal | Updated: $TIME"
-          # This finds the secret word and replaces it with your name
-          sed -i "s|\[copyright-area\]|$TEXT|g" README.md
+          # The '>>' tells the computer: "Just add this to the very last line"
+          echo -e "\n---\n$TEXT" >> README.md
       - name: Save Changes
         run: |
           git config --local user.email "action@github.com"
