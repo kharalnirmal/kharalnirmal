@@ -74,7 +74,7 @@
 ### 🤝 Connect & Collaborate (Bento Grid)
 
 <div align="center">
-  <p>Discover my work and connect on these platforms!</p>
+  <p>Discover my work and connect on these platforms!</p> 
   <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
     <a href="https://fb.com/last.knight.12935" target="blank">
       <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
