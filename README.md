@@ -11,21 +11,21 @@
   <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
 </p>
 
-<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
 
-### 🚀 About Me
+### <img align='left' src="https://media.tenor.com/fOD0TBLKQg8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="40px"> About Me
 
 <table border="0">
   <tr>
     <td width="60%">
       <p>
-        I am a <b>Fullstack Developer</b> focused on building robust and scalable web applications. My expertise lies in creating end-to-end, type-safe solutions using modern JavaScript frameworks and databases. I am passionate about clean code and efficient architecture.
+        I am a <b>Fullstack Developer</b> dedicated to creating seamless and scalable digital experiences. My focus is on building robust, type-safe applications from end-to-end using the latest technologies. I am passionate about efficient architecture and delivering high-quality code that solves real-world problems.
       </p>
       <ul>
-        <li>🔭 Currently focused on **Fullstack Architecture** and **Performance Optimization**.</li>
-        <li>🌱 Deep diving into **Next.js 15, Prisma, and Drizzle** to build the next generation of web services.</li>
-        <li>💬 Let's talk about **State Management (Zustand), Schema Validation (Zod)**, or the latest in serverless tech.</li>
-        <li>⚡ Fun fact: I believe **TypeScript** is the superpower that keeps the multiverse of code stable.</li>
+        <li>🔭 Currently architecting **Fullstack Solutions** and optimizing performance.</li>
+        <li>🌱 Deep diving into **Next.js 15, Prisma, and Drizzle** for modern web services.</li>
+        <li>💬 Let's discuss **State Management (Zustand), Schema Validation (Zod)**, or serverless technology.</li>
+        <li>Fun fact: I believe **TypeScript** is the superpower that keeps the multiverse of code stable.</li>
       </ul>
     </td>
     <td width="40%" align="center">
@@ -34,7 +34,7 @@
   </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="27"><i> Tech Stack & Ecosystem: </i>
 
@@ -60,7 +60,7 @@
   `Zustand` • `Drizzle ORM` • `Zod` • `Prisma` • `React Query`
 </div>
 
-<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
 
 ### 🤝 Connect & Collaborate (Bento Grid)
 
@@ -82,7 +82,7 @@
   </div>
 </div>
 
-<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
+<hr style="border: 0; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 210, 255, 0.75), rgba(0, 0, 0, 0));">
 
 ### 🐍 The Classic Snake
 <div align="center">
@@ -96,7 +96,6 @@
 <br>
 
 <div align="center" style="position: relative;">
-  <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255, 255, 255, 0.2); font-size: 80px; font-weight: bold; z-index: 1;">NYXEN</h1>
   <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px" style="position: relative; z-index: 2;" >
 </div>
 
