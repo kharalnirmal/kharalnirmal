@@ -1,6 +1,10 @@
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/render?type=waving&color=36BCF7&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
+    <img src="https://capsule-render.vercel.app/render?type=waving&color=00d2ff&height=200&section=header&text=Nirmal%20Kharal&fontSize=70&animation=fadeIn&fontAlignY=38" />
+  </picture>
 </div>
 
 <div align="center">
@@ -8,32 +12,22 @@
 </div>
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
-          <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="35" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://instagram.com/nirmalkharal" target="blank">
-          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="35" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://fb.com/last.knight.12935" target="blank">
-          <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" height="35" />
-        </a>
-      </td>
-    </tr>
-  </table>
+  <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://instagram.com/nirmalkharal" target="blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://fb.com/last.knight.12935" target="blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
 </div>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
 </p>
 
----
+<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
 ### 🚀 About Me
 
@@ -57,9 +51,14 @@
   </tr>
 </table>
 
----
+<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
 ### 🛠️ Tech Stack & Ecosystem
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/assets/strange.png" width="80" />
+  <img src="https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/assets/scarlet.png" width="80" />
+</div>
 
 <div align="center">
   
@@ -78,7 +77,7 @@
   `Zustand` • `Drizzle ORM` • `Zod` • `Prisma` • `React Query`
 </div>
 
----
+<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
 ### 📊 Performance Metrics
 
@@ -90,7 +89,7 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=kharalnirmal&theme=tokyonight&stroke=00d2ff&fire=00d2ff&ring=00d2ff&currStreakLabel=00d2ff&hide_border=true" alt="GitHub Streak" />
 </div>
 
----
+<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
 ### 🐍 The Classic Snake
 <div align="center">
@@ -104,7 +103,7 @@
 <br>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxx8721XWv6/giphy.gif" width="100%" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/l36kU80xPf0ojG0og/giphy.gif" width="400" />
 </div>
 
 <p align="center">
