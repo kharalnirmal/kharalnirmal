@@ -1,13 +1,11 @@
-<div align="center" style="margin-top: 20px;">
+<!-- <div align="center" style="margin-top: 20px;">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,50:00d2ff,100:ffffff&height=6&width=800" />
-</div>
+</div> -->
 
 <!-- <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&colorA=ffffff&colorB=00d2ff&colorC=cccccc&animation=fadeIn" width="100%">
 </div> -->
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Fullstack+Developer;Next.js+Architect;Open+Source+Enthusiast;Building+the+Web+of+2026" alt="Typing SVG" />
-</div>
+
 
 
 
@@ -33,6 +31,9 @@
         </ul>
       </td>
       <td width="40%" align="center" style="vertical-align: top;">
+        <div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Fullstack+Developer;Next.js+Architect;Open+Source+Enthusiast;Building+the+Web+of+2026" alt="Typing SVG" />
+</div>
         <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
         <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
