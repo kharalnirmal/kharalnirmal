@@ -7,54 +7,25 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Fullstack+Developer;Next.js+Architect;Open+Source+Enthusiast;Building+the+Web+of+2026" alt="Typing SVG" />
 </div>
 
-<div align="center">
-  <p>Discover my work and connect on these platforms!</p>
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://fb.com/last.knight.12935" target="blank">
-          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://instagram.com/nirmalkharal" target="blank">
-          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.instagram.com%2Fnirmalkharal%2F&subtitle=@nirmalkharal&size=square" width="150" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
-          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/kharalnirmal" target="blank">
-          <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fgithub.com%2Fkharalnirmal&subtitle=%2Fkharalnirmal&size=square" width="150" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
 </p>
 
 <img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
-### 🚀 About Me
+### 🚀 About Me: The Fullstack Alchemist
 
 <table border="0">
   <tr>
     <td width="60%">
       <p>
-        I am a <b>Fullstack Developer</b> passionate about creating seamless digital experiences. 
-        Transitioning from frontend expertise to building full-scale, type-safe applications with the latest technologies.
+        I am a <b>Fullstack Alchemist</b>, transforming ideas into robust, scalable digital gold. My journey has evolved from mastering the frontend craft to architecting complete, type-safe solutions that define the future of web development. I thrive on the challenge of building end-to-end applications that are not just functional, but truly exceptional.
       </p>
       <ul>
-        <li>🔭 Currently architecting <b>Fullstack Solutions</b></li>
-        <li>🌱 Deep diving into <b>Next.js 15, Prisma, and Drizzle</b></li>
-        <li>💬 Ask me about <b>State Management (Zustand) or Schema Validation (Zod)</b></li>
-        <li>⚡ Fun fact: I believe <b>TypeScript</b> is the superpower of modern web.</li>
+        <li>🔭 Currently focused on **Fullstack Architecture** and **Performance Optimization**.</li>
+        <li>🌱 Deep diving into **Next.js 15, Prisma, and Drizzle** to build the next generation of web services.</li>
+        <li>💬 Let's talk about **State Management (Zustand), Schema Validation (Zod)**, or the latest in serverless tech.</li>
+        <li>⚡ Fun fact: I believe **TypeScript** is the superpower that keeps the multiverse of code stable.</li>
       </ul>
     </td>
     <td width="40%" align="center">
@@ -91,6 +62,28 @@
 
 <img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
 
+### 🤝 Connect & Collaborate (Bento Grid)
+
+<div align="center">
+  <p>Discover my work and connect on these platforms!</p>
+  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <a href="https://fb.com/last.knight.12935" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
+    </a>
+    <a href="https://instagram.com/nirmalkharal" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.instagram.com%2Fnirmalkharal%2F&subtitle=@nirmalkharal&size=square" width="150" />
+    </a>
+    <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
+    </a>
+    <a href="https://github.com/kharalnirmal" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fgithub.com%2Fkharalnirmal&subtitle=%2Fkharalnirmal&size=square" width="150" />
+    </a>
+  </div>
+</div>
+
+<img src="https://capsule-render.vercel.app/render?type=rect&color=gradient&height=2&section=header" width="100%" />
+
 ### 📊 Performance Metrics
 
 <div align="center">
@@ -114,8 +107,9 @@
 
 <br>
 
-<div align="center">
-  <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px"  >
+<div align="center" style="position: relative;">
+  <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255, 255, 255, 0.2); font-size: 80px; font-weight: bold; z-index: 1;">NYXEN</h1>
+  <img align='center' src= "https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif" width="300px" style="position: relative; z-index: 2;" >
 </div>
 
 <div align="center">
