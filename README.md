@@ -90,16 +90,6 @@
   </div>
 </div>
 
-<div align="center" style="margin-top: 20px;">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=4&color=gradient&text=Input%20text" />
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00aaff,50:ffffff,100:00aaff&height=4&width=800" />
-</div>
-
-
-
-
-
-
 
 
 
@@ -126,5 +116,5 @@
 
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer&colorA=ffffff&colorB=00d2ff&colorC=cccccc&animation=fadeIn" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&text=EXPLORE&section=footer&descAlign=55&descAlignY=100&descSize=200&textBg=false&fontColor=FFFAFA&fontAlign=50&animation=twinkling&fontSize=90&fontAlignY=47" width="100%">
 </div>
