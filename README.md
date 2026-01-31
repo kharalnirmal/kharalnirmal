@@ -37,7 +37,7 @@
 </div>
         <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
         <p align="center">
-<div><img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=WEB%20CRAWLERS&color=8A2BE2&style=plastic&logo=spider-man" alt="Profile Crawlers" /></div>
+<div><img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=PROFILE%20CRAWLERS&color=8A2BE2&style=plastic&logo=spider-man" alt="Profile Crawlers" /></div>
 
 
 
