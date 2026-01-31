@@ -37,7 +37,12 @@
 </div>
         <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
         <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=Profile%20views&color=0e75b6&style=flat-square" alt="nirmal-kharal" />
+<img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=PROFILE%20CRAWLERS&color=c81d25&style=plastic&logo=spider-man" alt="Profile Crawlers" />
+
+
+
+
+
 </p>
       </td>
     </tr>
