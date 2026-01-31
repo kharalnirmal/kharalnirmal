@@ -37,7 +37,7 @@
 </div>
         <img alt="coding" width="350" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJid3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif">
         <p align="center">
-<div><img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=WEB%20CRAWLERS&color=8A2BE2&style=plastic&logo=spider-man" alt="Web Crawlers" /></div>
+<div><img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=WEB%20CRAWLERS&color=8A2BE2&style=plastic&logo=spider-man" alt="Profile Crawlers" /></div>
 
 
 
@@ -129,5 +129,3 @@
 
 #### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-30 21:26:06
 
----
-#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-31 07:24:52
