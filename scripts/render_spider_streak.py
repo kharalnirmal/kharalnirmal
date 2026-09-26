@@ -1,7 +1,6 @@
 """Render a live, spider-web themed GitHub streak graphic as SVG."""
 
 import datetime as dt
-import html
 import json
 import math
 import os
@@ -38,7 +37,7 @@ def fetch_days():
             for week in weeks for day in week["contributionDays"]}
 
 
-def render(days, today, preview=False):
+def render(days, today, transparent=False):
     current = today if days.get(today, 0) > 0 else today - dt.timedelta(days=1)
     streak = 0
     while days.get(current, 0) > 0:
@@ -46,72 +45,68 @@ def render(days, today, preview=False):
         current -= dt.timedelta(days=1)
     history = [days.get(today - dt.timedelta(days=34-i), 0) for i in range(35)]
     active = sum(value > 0 for value in history)
-    total = sum(history)
-    cx, cy = 284, 182
-    angles = [math.radians(degrees) for degrees in (-150, -100, -50, 0, 50, 100, 150)]
-    radii = (35, 65, 95, 125, 155)
+    cx, cy = 280, 165
+    angles = [math.radians(-90 + i * 360 / 7) for i in range(7)]
+    radii = (86, 102, 118, 134, 151)
 
     def xy(radius, angle):
-        return (cx + radius * math.cos(angle), cy + radius * .77 * math.sin(angle))
+        return (cx + radius * math.cos(angle), cy + radius * .67 * math.sin(angle))
 
     web = []
     for radius in radii:
         points = " ".join(f"{x:.1f},{y:.1f}" for x, y in (xy(radius, a) for a in angles))
-        web.append(f'<polyline points="{points}" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/>')
+        web.append(f'<polygon points="{points}" fill="none" stroke="#6B6B6B" stroke-width=".9" opacity=".63"/>')
     for angle in angles:
-        x, y = xy(165, angle)
-        web.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="#4B6076" stroke-width="1" opacity=".65"/>')
+        x, y = xy(151, angle)
+        web.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="#6B6B6B" stroke-width=".9" opacity=".63"/>')
 
     # One data point per day, ordered from oldest in the inner web to newest outside.
     nodes = []
     for i, count in enumerate(history):
         ring, spoke = divmod(i, 7)
         x, y = xy(radii[ring], angles[spoke])
-        color = "#24D6F2" if count >= 4 else "#FF495A" if count else "#334257"
-        radius = min(6.5, 3.2 + count * .6) if count else 2.5
+        color = "#FF5B65" if count >= 4 else "#DC3549" if count else "#555555"
+        radius = min(5.3, 3 + count * .45) if count else 2.1
         if count:
-            nodes.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius+4:.1f}" fill="{color}" opacity=".14"/>')
+            nodes.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius+3:.1f}" fill="{color}" opacity=".12"/>')
         nodes.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius:.1f}" fill="{color}"/>')
 
-    # An original, simple spider mark. No third-party image is embedded in the SVG.
-    spider = '''<g stroke="#FF495A" stroke-width="2.7" stroke-linecap="round" fill="none">
-      <path d="M272 171l-12-9-12-2M272 179l-16-2-12 7M274 186l-11 12-10 4M296 171l12-9 12-2M296 179l16-2 12 7M294 186l11 12 10 4"/>
-    </g>
-    <ellipse cx="284" cy="180" rx="11" ry="14" fill="#FF495A"/>
-    <circle cx="284" cy="162" r="7" fill="#FF495A"/>
-    <path d="M276 176l6 3-2-5M292 176l-6 3 2-5" fill="#07131D"/>'''
+    # The spider's legs stay within the empty central area (r < 80).
+    # Each side has four distinct, jointed legs and the body has two sections.
+    legs = []
+    for direction in (-1, 1):
+        paths = (
+            ((10, -13), (26, -28), (40, -30), (55, -44)),
+            ((13, -7), (30, -16), (48, -8), (67, -13)),
+            ((13, 3), (34, 9), (49, 20), (67, 22)),
+            ((10, 13), (27, 29), (39, 38), (54, 50)),
+        )
+        for root, knee, joint, tip in paths:
+            coords = [(cx + direction*x, cy + y) for x, y in (root, knee, joint, tip)]
+            p = " ".join(f"{x:.0f},{y:.0f}" for x, y in coords)
+            legs.append(f'<polyline points="{p}" fill="none" stroke="#D5D5D5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>')
+            legs.append(f'<circle cx="{coords[1][0]}" cy="{coords[1][1]}" r="2.4" fill="#F04A59"/>')
+    spider = f'''<g>{''.join(legs)}
+      <path d="M280 145V128" stroke="#858585" stroke-width="1"/>
+      <ellipse cx="280" cy="176" rx="15" ry="21" fill="#AF2536" stroke="#F25C65" stroke-width="1.2"/>
+      <path d="M271 169Q280 176 289 169M274 183l6 7 6-7" fill="none" stroke="#181818" stroke-width="2" opacity=".8"/>
+      <ellipse cx="280" cy="149" rx="11" ry="10" fill="#D33749" stroke="#F36D74" stroke-width="1"/>
+      <path d="M275 146l3 2M285 146l-3 2" stroke="#F3E6E7" stroke-width="1.5" stroke-linecap="round"/>
+    </g>'''
 
-    flag = "CONCEPT PREVIEW · SAMPLE DATA" if preview else "LIVE DATA · GITHUB"
-    date_text = today.strftime("%d %b %Y").upper()
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" role="img" aria-label="Nirmal Kharal: {streak} day streak, {active} active days in the last 35 days">
+    background = '' if transparent else '<rect width="900" height="320" rx="18" fill="#000000"/>'
+    border = '' if transparent else '<rect x=".8" y=".8" width="898.4" height="318.4" rx="17.2" fill="none" stroke="#353535" stroke-width="1.6"/>'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="Nirmal Kharal: {streak} day contribution streak, {active} active days out of 35">
   <title>Nirmal's Spider Streak</title>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop stop-color="#081420"/><stop offset="1" stop-color="#101B2E"/>
-    </linearGradient>
-    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop stop-color="#FF495A"/><stop offset="1" stop-color="#24D6F2"/>
-    </linearGradient>
-  </defs>
-  <rect width="940" height="360" rx="22" fill="url(#bg)"/>
-  <rect x="1" y="1" width="938" height="358" rx="21" fill="none" stroke="#32465D"/>
-  <path d="M0 57H940" stroke="#32465D"/>
-  <rect x="28" y="23" width="11" height="11" rx="2" fill="#FF495A"/>
-  <text x="52" y="34" font-size="14" font-weight="700" fill="#EAF1F7" letter-spacing="2" font-family="DejaVu Sans,Arial,sans-serif">NIRMAL / SPIDER STREAK</text>
-  <text x="910" y="34" text-anchor="end" font-size="11" fill="#8499AD" letter-spacing="1.5" font-family="DejaVu Sans,Arial,sans-serif">{html.escape(flag)}</text>
+  {background}{border}
+  <rect x="28" y="24" width="4" height="15" rx="2" fill="#E34454"/>
+  <text x="43" y="37" font-size="14" font-weight="700" fill="#F1F1F1" letter-spacing="1.7" font-family="DejaVu Sans,Arial,sans-serif">SPIDER STREAK</text>
   <g>{''.join(web)}{''.join(nodes)}{spider}</g>
-  <path d="M576 79V319" stroke="#32465D"/>
-  <text x="610" y="112" font-size="12" font-weight="700" fill="#8499AD" letter-spacing="2.5" font-family="DejaVu Sans,Arial,sans-serif">CONNECTED DAYS</text>
-  <text x="604" y="229" font-size="116" font-weight="800" fill="#F5F8FB" font-family="DejaVu Sans,Arial,sans-serif">{streak}</text>
-  <path d="M608 243H902" stroke="url(#thread)" stroke-width="3"/>
-  <circle cx="608" cy="243" r="5" fill="#FF495A"/>
-  <circle cx="902" cy="243" r="5" fill="#24D6F2"/>
-  <text x="610" y="281" font-size="16" font-weight="700" fill="#24D6F2" font-family="DejaVu Sans,Arial,sans-serif">{active} / 35</text>
-  <text x="699" y="281" font-size="12" fill="#A9BAC9" letter-spacing="1" font-family="DejaVu Sans,Arial,sans-serif">ACTIVE WEB NODES</text>
-  <text x="610" y="312" font-size="12" fill="#A9BAC9" font-family="DejaVu Sans,Arial,sans-serif">{total} contributions across the web</text>
-  <path d="M28 329H912" stroke="#32465D"/>
-  <text x="30" y="349" font-size="11" fill="#8499AD" letter-spacing="1" font-family="DejaVu Sans,Arial,sans-serif">EACH CONTRIBUTION ADDS A THREAD</text>
-  <text x="910" y="349" text-anchor="end" font-size="11" fill="#8499AD" font-family="DejaVu Sans,Arial,sans-serif">{date_text}</text>
+  <path d="M527 71V274" stroke="#3E3E3E" stroke-width="1"/>
+  <text x="566" y="102" font-size="13" font-weight="700" fill="#BEBEBE" letter-spacing="2" font-family="DejaVu Sans,Arial,sans-serif">CURRENT STREAK</text>
+  <text x="557" y="212" font-size="116" font-weight="800" fill="#F7F7F7" font-family="DejaVu Sans,Arial,sans-serif">{streak}</text>
+  <path d="M566 231H852" stroke="#D83A4C" stroke-width="2"/>
+  <text x="566" y="267" font-size="15" fill="#DDDDDD" font-family="DejaVu Sans,Arial,sans-serif">{active} / 35 active days</text>
 </svg>'''
 
 
@@ -123,9 +118,12 @@ if __name__ == "__main__":
                   2, 4, 1, 3, 0, 2, 5, 1, 0, 1, 3, 2, 4, 2, 5, 3, 0]
         data = {today - dt.timedelta(days=34-i): value for i, value in enumerate(sample)}
         output = Path("spider-streak-preview.svg")
+        transparent_output = Path("spider-streak-transparent-preview.svg")
     else:
         data = fetch_days()
         output = Path("assets/spider-streak.svg")
+        transparent_output = Path("assets/spider-streak-transparent.svg")
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(render(data, today, preview), encoding="utf-8")
-    print(f"Wrote {output}")
+    output.write_text(render(data, today), encoding="utf-8")
+    transparent_output.write_text(render(data, today, transparent=True), encoding="utf-8")
+    print(f"Wrote {output} and {transparent_output}")
