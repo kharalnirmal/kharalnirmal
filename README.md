@@ -64,26 +64,6 @@
 </div>
 
 <hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
-
-### 🤝 Connect & Collaborate
-
-<div align="center">
-  <p>Discover my work and connect on these platforms!</p> 
-  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-    <a href="https://fb.com/last.knight.12935" target="blank">
-      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
-    </a>
-    <a href="https://instagram.com/nirmalkharal" target="blank">
-      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.instagram.com%2Fnirmalkharal%2F&subtitle=@nirmalkharal&size=square" width="150" />
-    </a>
-    <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
-      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
-    </a>
-    <a href="https://nirmalkharal.tech" target="blank">
-      <img src="https://bentos.jkominovic.dev/api/v1/generic-card?icon=siaboutdotme&subtitle=Portfolio&size=square" width="150" />
-    </a>
-  </div>
-</div>
 <div align="center">
   <picture>
     <source
@@ -102,11 +82,34 @@
   </picture>
 </div>
 
+<br>
+
+<hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
+<div align="center">
+
+<div align="center">
+  <p>Discover my work and connect on these platforms!</p> 
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    <a href="https://fb.com/last.knight.12935" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Ffacebook.com%2Flast.knight.12935&subtitle=@Nirmal+Kharal&size=square" width="150" />
+    </a>
+    <a href="https://instagram.com/nirmalkharal" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.instagram.com%2Fnirmalkharal%2F&subtitle=@nirmalkharal&size=square" width="150" />
+    </a>
+    <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
+    </a>
+    <a href="https://nirmalkharal.tech" target="blank">
+      <img src="https://bentos.jkominovic.dev/api/v1/generic-card?icon=siaboutdotme&subtitle=Portfolio&size=square" width="150" />
+    </a>
+  </div>
+</div>
+
 <div align="center" style="line-height: 0;">
   <img
     src="https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif"
     width="300px"
-    style="display:block; margin: 0 auto -120px;"
+    style="display:block; margin: 0 auto -10px;"
   />
   <!-- <picture style="display:block;">
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
@@ -129,4 +132,5 @@
 ---
 
 ---
+
 #### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-09-26 08:57:09
