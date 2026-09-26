@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" role="img" aria-label="Nirmal Kharal: 1 day streak, 7 active days in the last 35 days">
+  <title>Nirmal's Spider Streak</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#081420"/><stop offset="1" stop-color="#101B2E"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop stop-color="#FF495A"/><stop offset="1" stop-color="#24D6F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="940" height="360" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="938" height="358" rx="21" fill="none" stroke="#32465D"/>
+  <path d="M0 57H940" stroke="#32465D"/>
+  <rect x="28" y="23" width="11" height="11" rx="2" fill="#FF495A"/>
+  <text x="52" y="34" font-size="14" font-weight="700" fill="#EAF1F7" letter-spacing="2" font-family="DejaVu Sans,Arial,sans-serif">NIRMAL / SPIDER STREAK</text>
+  <text x="910" y="34" text-anchor="end" font-size="11" fill="#8499AD" letter-spacing="1.5" font-family="DejaVu Sans,Arial,sans-serif">LIVE DATA · GITHUB</text>
+  <g><polyline points="253.7,168.5 277.9,155.5 306.5,161.4 319.0,182.0 306.5,202.6 277.9,208.5 253.7,195.5" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/><polyline points="227.7,157.0 272.7,132.7 325.8,143.7 349.0,182.0 325.8,220.3 272.7,231.3 227.7,207.0" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/><polyline points="201.7,145.4 267.5,110.0 345.1,126.0 379.0,182.0 345.1,238.0 267.5,254.0 201.7,218.6" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/><polyline points="175.7,133.9 262.3,87.2 364.3,108.3 409.0,182.0 364.3,255.7 262.3,276.8 175.7,230.1" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/><polyline points="149.8,122.3 257.1,64.5 383.6,90.6 439.0,182.0 383.6,273.4 257.1,299.5 149.8,241.7" fill="none" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="141.1" y2="118.5" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="255.3" y2="56.9" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="390.1" y2="84.7" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="449.0" y2="182.0" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="390.1" y2="279.3" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="255.3" y2="307.1" stroke="#4B6076" stroke-width="1" opacity=".65"/><line x1="284" y1="182" x2="141.1" y2="245.5" stroke="#4B6076" stroke-width="1" opacity=".65"/><circle cx="253.7" cy="168.5" r="9.0" fill="#FF495A" opacity=".14"/><circle cx="253.7" cy="168.5" r="5.0" fill="#FF495A"/><circle cx="277.9" cy="155.5" r="8.4" fill="#FF495A" opacity=".14"/><circle cx="277.9" cy="155.5" r="4.4" fill="#FF495A"/><circle cx="306.5" cy="161.4" r="9.0" fill="#FF495A" opacity=".14"/><circle cx="306.5" cy="161.4" r="5.0" fill="#FF495A"/><circle cx="319.0" cy="182.0" r="2.5" fill="#334257"/><circle cx="306.5" cy="202.6" r="2.5" fill="#334257"/><circle cx="277.9" cy="208.5" r="2.5" fill="#334257"/><circle cx="253.7" cy="195.5" r="2.5" fill="#334257"/><circle cx="227.7" cy="157.0" r="2.5" fill="#334257"/><circle cx="272.7" cy="132.7" r="2.5" fill="#334257"/><circle cx="325.8" cy="143.7" r="2.5" fill="#334257"/><circle cx="349.0" cy="182.0" r="2.5" fill="#334257"/><circle cx="325.8" cy="220.3" r="2.5" fill="#334257"/><circle cx="272.7" cy="231.3" r="2.5" fill="#334257"/><circle cx="227.7" cy="207.0" r="2.5" fill="#334257"/><circle cx="201.7" cy="145.4" r="2.5" fill="#334257"/><circle cx="267.5" cy="110.0" r="2.5" fill="#334257"/><circle cx="345.1" cy="126.0" r="2.5" fill="#334257"/><circle cx="379.0" cy="182.0" r="2.5" fill="#334257"/><circle cx="345.1" cy="238.0" r="2.5" fill="#334257"/><circle cx="267.5" cy="254.0" r="2.5" fill="#334257"/><circle cx="201.7" cy="218.6" r="2.5" fill="#334257"/><circle cx="175.7" cy="133.9" r="2.5" fill="#334257"/><circle cx="262.3" cy="87.2" r="2.5" fill="#334257"/><circle cx="364.3" cy="108.3" r="8.4" fill="#FF495A" opacity=".14"/><circle cx="364.3" cy="108.3" r="4.4" fill="#FF495A"/><circle cx="409.0" cy="182.0" r="2.5" fill="#334257"/><circle cx="364.3" cy="255.7" r="9.0" fill="#FF495A" opacity=".14"/><circle cx="364.3" cy="255.7" r="5.0" fill="#FF495A"/><circle cx="262.3" cy="276.8" r="2.5" fill="#334257"/><circle cx="175.7" cy="230.1" r="8.4" fill="#FF495A" opacity=".14"/><circle cx="175.7" cy="230.1" r="4.4" fill="#FF495A"/><circle cx="149.8" cy="122.3" r="2.5" fill="#334257"/><circle cx="257.1" cy="64.5" r="2.5" fill="#334257"/><circle cx="383.6" cy="90.6" r="2.5" fill="#334257"/><circle cx="439.0" cy="182.0" r="2.5" fill="#334257"/><circle cx="383.6" cy="273.4" r="2.5" fill="#334257"/><circle cx="257.1" cy="299.5" r="2.5" fill="#334257"/><circle cx="149.8" cy="241.7" r="9.0" fill="#FF495A" opacity=".14"/><circle cx="149.8" cy="241.7" r="5.0" fill="#FF495A"/><g stroke="#FF495A" stroke-width="2.7" stroke-linecap="round" fill="none">
+      <path d="M272 171l-12-9-12-2M272 179l-16-2-12 7M274 186l-11 12-10 4M296 171l12-9 12-2M296 179l16-2 12 7M294 186l11 12 10 4"/>
+    </g>
+    <ellipse cx="284" cy="180" rx="11" ry="14" fill="#FF495A"/>
+    <circle cx="284" cy="162" r="7" fill="#FF495A"/>
+    <path d="M276 176l6 3-2-5M292 176l-6 3 2-5" fill="#07131D"/></g>
+  <path d="M576 79V319" stroke="#32465D"/>
+  <text x="610" y="112" font-size="12" font-weight="700" fill="#8499AD" letter-spacing="2.5" font-family="DejaVu Sans,Arial,sans-serif">CONNECTED DAYS</text>
+  <text x="604" y="229" font-size="116" font-weight="800" fill="#F5F8FB" font-family="DejaVu Sans,Arial,sans-serif">1</text>
+  <path d="M608 243H902" stroke="url(#thread)" stroke-width="3"/>
+  <circle cx="608" cy="243" r="5" fill="#FF495A"/>
+  <circle cx="902" cy="243" r="5" fill="#24D6F2"/>
+  <text x="610" y="281" font-size="16" font-weight="700" fill="#24D6F2" font-family="DejaVu Sans,Arial,sans-serif">7 / 35</text>
+  <text x="699" y="281" font-size="12" fill="#A9BAC9" letter-spacing="1" font-family="DejaVu Sans,Arial,sans-serif">ACTIVE WEB NODES</text>
+  <text x="610" y="312" font-size="12" fill="#A9BAC9" font-family="DejaVu Sans,Arial,sans-serif">18 contributions across the web</text>
+  <path d="M28 329H912" stroke="#32465D"/>
+  <text x="30" y="349" font-size="11" fill="#8499AD" letter-spacing="1" font-family="DejaVu Sans,Arial,sans-serif">EACH CONTRIBUTION ADDS A THREAD</text>
+  <text x="910" y="349" text-anchor="end" font-size="11" fill="#8499AD" font-family="DejaVu Sans,Arial,sans-serif">26 SEP 2026</text>
+</svg>
