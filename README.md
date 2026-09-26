@@ -1,4 +1,3 @@
-
 <!-- <div align="center" style="margin-top: 20px;">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,50:00d2ff,100:ffffff&height=6&width=800" />
 </div> -->
@@ -6,11 +5,6 @@
 <!-- <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header&colorA=ffffff&colorB=00d2ff&colorC=cccccc&animation=fadeIn" width="100%">
 </div> -->
-
-
-
-
-
 
 <div align="center">
   <table border="0" style="width: 100%;">
@@ -39,18 +33,11 @@
         <p align="center">
 <div><img src="https://komarev.com/ghpvc/?username=nirmal-kharal&label=PROFILE%20CRAWLERS&color=8A2BE2&style=plastic&logo=spider-man" alt="Profile Crawlers" /></div>
 
-
-
-
-
-
-
 </p>
       </td>
     </tr>
   </table>
 </div>
-
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="28"><i> Tech Stack & Ecosystem: </i>
 
@@ -78,7 +65,7 @@
 
 <hr style="border: 0; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00d2ff, #ffffff, #00d2ff, rgba(0, 0, 0, 0));">
 
-### 🤝 Connect & Collaborate 
+### 🤝 Connect & Collaborate
 
 <div align="center">
   <p>Discover my work and connect on these platforms!</p> 
@@ -98,11 +85,6 @@
   </div>
 </div>
 
-
-
-
-
-
 <div align="center" style="line-height: 0;">
   <img
     src="https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif"
@@ -120,8 +102,9 @@
   </picture> -->
 </div>
 
-
-
+ <div align="center">
+     <img src="./assets/spider-streak.svg" alt="Nirmal's live Spider Streak contribution graph" width="95%" />
+   </div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&text=EXPLORE&section=footer&descAlign=55&descAlignY=100&descSize=200&textBg=false&fontColor=FFFAFA&fontAlign=50&animation=twinkling&fontSize=90&fontAlignY=47" width="100%">
@@ -129,6 +112,6 @@
 
 #### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-30 21:26:06
 
-
 ---
+
 #### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-31 07:39:22
