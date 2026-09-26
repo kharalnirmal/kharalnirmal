@@ -100,11 +100,24 @@
       style="display:block;"
     />
   </picture> -->
+  <div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="./assets/spider-streak-light.svg"
+    />
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="./assets/spider-streak-dark.svg"
+    />
+    <img
+      src="./assets/spider-streak-dark.svg"
+      alt="Nirmal's Spider Streak contribution graph"
+      width="95%"
+    />
+  </picture>
 </div>
-
- <div align="center">
-     <img src="./assets/spider-streak.svg" alt="Nirmal's live Spider Streak contribution graph" width="95%" />
-   </div>
+</div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&text=EXPLORE&section=footer&descAlign=55&descAlignY=100&descSize=200&textBg=false&fontColor=FFFAFA&fontAlign=50&animation=twinkling&fontSize=90&fontAlignY=47" width="100%">
@@ -113,8 +126,3 @@
 #### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-30 21:26:06
 
 ---
-
-#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-01-31 07:39:22
-
----
-#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-09-26 08:32:56

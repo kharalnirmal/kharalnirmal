@@ -13,17 +13,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Render real contributions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/render_spider_streak.py
-      - name: Save generated image
+
+      - name: Save generated images
         run: |
-          git add assets/spider-streak.svg assets/spider-streak-transparent.svg
+          git add assets/spider-streak-dark.svg assets/spider-streak-light.svg
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Update spider streak'
+            git -c user.name='github-actions[bot]' \
+                -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+                commit -m 'Update spider streak'
             git push
           fi
