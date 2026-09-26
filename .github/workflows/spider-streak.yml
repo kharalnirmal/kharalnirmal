@@ -3,7 +3,7 @@ name: Update Spider Streak
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 1 * * *"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write

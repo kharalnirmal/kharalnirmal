@@ -84,23 +84,7 @@
     </a>
   </div>
 </div>
-
-<div align="center" style="line-height: 0;">
-  <img
-    src="https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif"
-    width="300px"
-    style="display:block; margin: 0 auto -120px;"
-  />
-  <!-- <picture style="display:block;">
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
-    <img
-      alt="github-snake"
-      src="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg"
-      style="display:block;"
-    />
-  </picture> -->
-  <div align="center">
+<div align="center">
   <picture>
     <source
       media="(prefers-color-scheme: light)"
@@ -117,6 +101,23 @@
     />
   </picture>
 </div>
+
+<div align="center" style="line-height: 0;">
+  <img
+    src="https://media.tenor.com/ivIQbWI5qe8AAAAi/spider-man-no-way-home-marvel-studios.gif"
+    width="300px"
+    style="display:block; margin: 0 auto -120px;"
+  />
+  <!-- <picture style="display:block;">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg" />
+    <img
+      alt="github-snake"
+      src="https://raw.githubusercontent.com/Nirmal-Kharal/Nirmal-Kharal/output/github-snake.svg"
+      style="display:block;"
+    />
+  </picture> -->
+  
 </div>
 
 <div align="center">

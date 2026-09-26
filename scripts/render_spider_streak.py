@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import sys
 import urllib.request
+from zoneinfo import ZoneInfo
 
 USERNAME = "kharalnirmal"
 
@@ -57,6 +58,7 @@ def fetch_days():
 
 
 def render(days, today, theme="dark"):
+    # Today is unfinished. If it has no activity yet, start from yesterday.
     current = (
         today
         if days.get(today, 0) > 0
@@ -68,11 +70,16 @@ def render(days, today, theme="dark"):
         streak += 1
         current -= dt.timedelta(days=1)
 
+    streak_dates = {
+        current + dt.timedelta(days=i)
+        for i in range(1, streak + 1)
+    }
+
     history = [
         days.get(today - dt.timedelta(days=34 - i), 0)
         for i in range(35)
     ]
-    active = sum(value > 0 for value in history)
+    active = sum(count > 0 for count in history)
 
     if theme not in ("dark", "light"):
         raise ValueError("theme must be dark or light")
@@ -117,12 +124,13 @@ def render(days, today, theme="dark"):
             f'stroke="{thread}" stroke-width=".9" opacity=".7"/>'
         )
 
-    # Five rings × seven dots = the last 35 days.
+    # Each ring contains seven days. Inner rings are older.
     nodes = []
 
     for i, count in enumerate(history):
         ring, spoke = divmod(i, 7)
         x, y = xy(radii[ring], angles[spoke])
+        date = today - dt.timedelta(days=34 - i)
 
         color = (
             "#FF5B65" if count >= 4
@@ -142,15 +150,23 @@ def render(days, today, theme="dark"):
             f'r="{radius:.1f}" fill="{color}"/>'
         )
 
-    # Keep all eight legs inside the empty center of the web.
+        # Outline only the dots that belong to the current streak.
+        if date in streak_dates:
+            nodes.append(
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" '
+                f'r="{radius + 2.4:.1f}" fill="none" '
+                f'stroke="{ink}" stroke-width="1.25"/>'
+            )
+
+    # Four segmented legs on each side, clear of the data dots.
     legs = []
 
     for direction in (-1, 1):
         paths = (
-            ((10, -13), (26, -28), (40, -30), (55, -44)),
-            ((13, -7), (30, -16), (48, -8), (67, -13)),
-            ((13, 3), (34, 9), (49, 20), (67, 22)),
-            ((10, 13), (27, 29), (39, 38), (54, 50)),
+            ((9, -13), (25, -26), (39, -34), (54, -49)),
+            ((12, -6), (30, -14), (47, -12), (65, -19)),
+            ((12, 3), (31, 8), (47, 17), (65, 23)),
+            ((9, 12), (25, 26), (39, 35), (54, 48)),
         )
 
         for root, knee, joint, tip in paths:
@@ -158,34 +174,45 @@ def render(days, today, theme="dark"):
                 (cx + direction * x, cy + y)
                 for x, y in (root, knee, joint, tip)
             ]
-            points = " ".join(
-                f"{x:.0f},{y:.0f}"
-                for x, y in coords
+            proximal = " ".join(
+                f"{x:.0f},{y:.0f}" for x, y in coords[:3]
+            )
+            distal = " ".join(
+                f"{x:.0f},{y:.0f}" for x, y in coords[2:]
             )
 
             legs.append(
-                f'<polyline points="{points}" fill="none" '
-                f'stroke="{leg}" stroke-width="3.2" '
+                f'<polyline points="{proximal}" fill="none" '
+                f'stroke="{leg}" stroke-width="3.5" '
                 f'stroke-linecap="round" stroke-linejoin="round"/>'
             )
             legs.append(
-                f'<circle cx="{coords[1][0]}" '
-                f'cy="{coords[1][1]}" r="2.4" fill="#F04A59"/>'
+                f'<polyline points="{distal}" fill="none" '
+                f'stroke="{leg}" stroke-width="1.7" '
+                f'stroke-linecap="round"/>'
+            )
+            legs.append(
+                f'<circle cx="{coords[1][0]}" cy="{coords[1][1]}" '
+                f'r="1.8" fill="#B53849"/>'
             )
 
     spider = f'''<g>{''.join(legs)}
-      <path d="M280 145V128" stroke="#858585" stroke-width="1"/>
-      <ellipse cx="280" cy="176" rx="15" ry="21"
-        fill="#AF2536" stroke="#F25C65" stroke-width="1.2"/>
-      <path d="M271 169Q280 176 289 169M274 183l6 7 6-7"
-        fill="none" stroke="#181818" stroke-width="2" opacity=".8"/>
-      <ellipse cx="280" cy="149" rx="11" ry="10"
-        fill="#D33749" stroke="#F36D74" stroke-width="1"/>
-      <path d="M275 146l3 2M285 146l-3 2"
-        stroke="#F3E6E7" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M280 157v4" stroke="#8F6266" stroke-width="4"/>
+      <ellipse cx="280" cy="180" rx="15" ry="20"
+        fill="#362126" stroke="#A45B65" stroke-width="1.2"/>
+      <path d="M280 164c-5 5-7 12-4 17l4-4 4 4c3-5 1-12-4-17z"
+        fill="#B63848"/>
+      <path d="M272 189q8 5 16 0"
+        fill="none" stroke="#8F515B" stroke-width="1"/>
+      <ellipse cx="280" cy="148" rx="11" ry="9"
+        fill="#48262C" stroke="#A96670" stroke-width="1.1"/>
+      <circle cx="276" cy="146" r="1.15" fill="#D7BEC1"/>
+      <circle cx="279" cy="144" r="1.15" fill="#D7BEC1"/>
+      <circle cx="282" cy="144" r="1.15" fill="#D7BEC1"/>
+      <circle cx="285" cy="146" r="1.15" fill="#D7BEC1"/>
     </g>'''
 
-    # Deliberately no background rectangle: the SVG is transparent.
+    # No background rectangle: GitHub's page color shows through.
     return f'''<svg xmlns="http://www.w3.org/2000/svg"
       width="900" height="320" viewBox="0 0 900 320"
       role="img"
@@ -196,22 +223,24 @@ def render(days, today, theme="dark"):
       <rect x="28" y="24" width="4" height="15"
         rx="2" fill="#E34454"/>
       <text x="43" y="37" font-size="14" font-weight="700"
-        fill="{ink}" letter-spacing="1.7"
-        font-family="DejaVu Sans,Arial,sans-serif">SPIDER STREAK</text>
+        fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
+        SPIDER STREAK
+      </text>
 
       <g>{''.join(web)}{''.join(nodes)}{spider}</g>
 
       <text x="280" y="296" text-anchor="middle"
-        font-size="11" fill="{muted}" letter-spacing="1"
+        font-size="11" fill="{muted}"
         font-family="DejaVu Sans,Arial,sans-serif">
-        35 DAYS · INNER → OUTER
+        35 DAYS · INNER → OUTER · OUTLINED = STREAK
       </text>
 
       <path d="M527 71V274" stroke="{divider}" stroke-width="1"/>
 
       <text x="566" y="102" font-size="13" font-weight="700"
-        fill="{muted}" letter-spacing="2"
-        font-family="DejaVu Sans,Arial,sans-serif">CURRENT STREAK</text>
+        fill="{muted}" font-family="DejaVu Sans,Arial,sans-serif">
+        STREAK · DAYS IN A ROW
+      </text>
 
       <text x="557" y="212" font-size="116" font-weight="800"
         fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
@@ -222,13 +251,13 @@ def render(days, today, theme="dark"):
 
       <text x="566" y="267" font-size="15" fill="{ink}"
         font-family="DejaVu Sans,Arial,sans-serif">
-        {active} / 35 ACTIVE DAYS
+        ACTIVITY · {active} OF LAST 35 DAYS
       </text>
     </svg>'''
 
 
 if __name__ == "__main__":
-    today = dt.datetime.now(dt.timezone.utc).date()
+    today = dt.datetime.now(ZoneInfo("Asia/Kathmandu")).date()
     days = fetch_days()
 
     dark_output = Path("assets/spider-streak-dark.svg")
