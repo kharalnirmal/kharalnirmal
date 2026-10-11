@@ -99,7 +99,7 @@
     <a href="https://linkedin.com/in/nirmal-kharal-37659a2a1" target="blank">
       <img src="https://bentos.jkominovic.dev/api/v1/bento-cards?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnirmal-kharal-37659a2a1%2F&subtitle=@Nirmal+Kharal&size=square" width="150" />
     </a>
-    <a href="https://nirmalkharal.tech" target="blank">
+    <a href="https://nirmalkharal.dev/" target="blank">
       <img src="https://bentos.jkominovic.dev/api/v1/generic-card?icon=siaboutdotme&subtitle=Portfolio&size=square" width="150" />
     </a>
   </div>
