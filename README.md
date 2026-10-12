@@ -22,7 +22,7 @@
           <li>Currently architecting <b>Fullstack Solutions</b> and optimizing performance.</li>
           <li>Deep diving into <b>Next.js, Prisma, and Drizzle</b> for modern web services.</li>
           <li>Let's discuss <b>State Management (Zustand), Schema Validation (Zod)</b>, or serverless technology.</li>
-          <li>Fun fact: <i>"I chat with AI and it corrects my comments more than my code."</i></li>
+          <li>Fun fact: <i>"I chat with AI and it corrects my comments more than my code"</i></li>
         </ul>
       </td>
       <td width="40%" align="center" style="vertical-align: top;">
