@@ -128,3 +128,6 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&text=EXPLORE&section=footer&descAlign=55&descAlignY=100&descSize=200&textBg=false&fontColor=FFFAFA&fontAlign=50&animation=twinkling&fontSize=90&fontAlignY=47" width="100%">
 </div>
+
+---
+#### 🕒 Verified Original Design: Nirmal Kharal | Updated: 2026-10-22 20:02:27
