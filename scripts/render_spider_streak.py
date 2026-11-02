@@ -115,28 +115,23 @@ def streak_stats(days, today):
     return current, longest, streak_dates
 
 
-SPIDER_ART = '''<g id="spiderman-mask" aria-hidden="true">
-  <!-- Recognizable red mask silhouette with web strands and expressive white lenses -->
-  <circle cx="280" cy="166" r="57" fill="none" stroke="#ED3D57" stroke-width="1.4" opacity=".28"/>
-  <path d="M242 245 C240 224 252 209 264 203 L273 195 L287 195 L297 203 C309 209 320 225 318 245 Z"
-        fill="#101F35" stroke="#D43754" stroke-width="2.3" stroke-linejoin="round"/>
-  <path d="M243 243 C248 223 255 216 266 210 L270 221 L259 245 Z" fill="#D52D48"/>
-  <path d="M317 243 C312 223 305 216 294 210 L290 221 L301 245 Z" fill="#D52D48"/>
-  <path d="M265 209 L280 223 L295 209" fill="none" stroke="#EA4B61" stroke-width="1.5"/>
-  <path d="M278 219 Q280 215 282 219 L283 226 L280 230 L277 226Z" fill="#DB304A"/>
-  <path d="M278 223 l-7 -5 m7 6 l-10 0 m9 3 l-8 6 m13 -10 l7 -5 m-7 6 l10 0 m-9 3 l8 6" fill="none" stroke="#F1455C" stroke-width="1.1" stroke-linecap="round"/>
-  <path d="M271 190 L269 208 L280 215 L291 208 L289 190 Z" fill="#B82038" stroke="#10151D" stroke-width="2"/>
-  <path d="M280 111 C258 111 248 128 246 149 C244 168 254 186 267 194 C276 200 284 200 293 194 C306 186 316 168 314 149 C312 128 302 111 280 111Z"
-        fill="url(#heroMask)" stroke="#0F1520" stroke-width="4.2" stroke-linejoin="round"/>
-  <path d="M256 135 Q262 117 277 117" fill="none" stroke="#FF6479" stroke-width="2.1" opacity=".7" stroke-linecap="round"/>
-  <g stroke="#611424" stroke-width="1.35" opacity=".85" fill="none" stroke-linecap="round">
-    <path d="M280 114L280 193 M280 141L249 128 M280 141L311 128 M280 141L247 147 M280 141L313 147 M280 141L251 170 M280 141L309 170 M280 141L266 191 M280 141L294 191"/>
-    <path d="M253 131Q280 144 307 131 M248 145Q280 159 312 145 M249 164Q280 173 311 164 M259 182Q280 187 301 182"/>
+SPIDER_ART = '''<g id="spider-emblem" aria-hidden="true">
+  <!-- Angular red spider emblem: mirrored pointed legs and compact body -->
+  <g fill="url(#emblemRed)" stroke="#39080F" stroke-width="1.9" stroke-linejoin="round">
+    <path d="M278 170 C259 164 247 153 225 154 L214 159 C213 135 230 99 249 76 C226 94 205 126 199 165 L218 174 C240 164 255 172 273 182Z"/>
+    <path d="M282 170 C301 164 313 153 335 154 L346 159 C347 135 330 99 311 76 C334 94 355 126 361 165 L342 174 C320 164 305 172 287 182Z"/>
+    <path d="M275 170 C263 155 259 140 259 122 C246 141 246 163 265 182Z"/>
+    <path d="M285 170 C297 155 301 140 301 122 C314 141 314 163 295 182Z"/>
+    <path d="M275 189 C249 194 236 205 217 226 L202 253 C202 229 207 215 211 204 L192 192 C191 219 190 252 211 270 C219 250 234 228 251 216 L277 198Z"/>
+    <path d="M285 189 C311 194 324 205 343 226 L358 253 C358 229 353 215 349 204 L368 192 C369 219 370 252 349 270 C341 250 326 228 309 216 L283 198Z"/>
+    <path d="M273 197 C254 210 243 237 246 265 C252 246 264 222 278 207Z"/>
+    <path d="M287 197 C306 210 317 237 314 265 C308 246 296 222 282 207Z"/>
+    <path d="M280 158 C265 158 259 167 259 182 C258 197 266 211 280 220 C294 211 302 197 301 182 C301 167 295 158 280 158Z"/>
+    <path d="M277 161 L272 149 L276 141 L280 155 L284 141 L288 149 L283 161Z"/>
   </g>
-  <path d="M252 146 Q263 145 276 154 Q274 166 266 171 Q256 169 251 161Z" fill="#F7FBFF" stroke="#0A111D" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M308 146 Q297 145 284 154 Q286 166 294 171 Q304 169 309 161Z" fill="#F7FBFF" stroke="#0A111D" stroke-width="5" stroke-linejoin="round"/>
-  <path d="M255 151 Q264 152 272 157 M305 151 Q296 152 288 157" fill="none" stroke="#BEE7F2" stroke-width="1.3" opacity=".8"/>
-  <path d="M273 181 Q280 183 287 181" fill="none" stroke="#8B1B2E" stroke-width="1.5"/>
+  <path d="M280 180 C273 193 273 201 280 212 C287 201 287 193 280 180Z" fill="#400711" opacity=".7"/>
+  <path d="M256 89 C240 113 225 143 220 159 M304 89 C320 113 335 143 340 159"
+        fill="none" stroke="#FF7584" stroke-width="1.5" opacity=".7" stroke-linecap="round"/>
 </g>'''
 
 
@@ -239,8 +234,8 @@ def render(days, today, theme="dark"):
         <linearGradient id="spiderMask" x1="0" y1="0" x2="1" y2="1">
           <stop stop-color="#D83B55"/><stop offset=".4" stop-color="#8F1D36"/><stop offset="1" stop-color="#131924"/>
         </linearGradient>
-      <linearGradient id="heroMask" x1="0" y1="0" x2="1" y2="1">
-          <stop stop-color="#FC405B"/><stop offset=".45" stop-color="#D32A46"/><stop offset="1" stop-color="#9F1F3B"/>
+      <linearGradient id="emblemRed" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#F63046"/><stop offset=".6" stop-color="#BF1025"/><stop offset="1" stop-color="#8E081B"/>
         </linearGradient>
       </defs>
 
