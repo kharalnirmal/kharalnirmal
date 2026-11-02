@@ -115,38 +115,28 @@ def streak_stats(days, today):
     return current, longest, streak_dates
 
 
-SPIDER_ART = '''<g id="spider-mascot" aria-hidden="true">
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <g id="legs-left">
-      <path d="M274 164 L260 149 L240 142 L220 112 L206 109" stroke="#131822" stroke-width="7"/>
-      <path d="M274 164 L260 149 L240 142 L220 112 L206 109" stroke="#D7374C" stroke-width="2.2"/>
-      <path d="M270 171 L248 163 L230 170 L207 157 L194 161" stroke="#131822" stroke-width="7"/>
-      <path d="M270 171 L248 163 L230 170 L207 157 L194 161" stroke="#D7374C" stroke-width="2.2"/>
-      <path d="M270 183 L250 193 L232 190 L210 208 L195 206" stroke="#131822" stroke-width="7"/>
-      <path d="M270 183 L250 193 L232 190 L210 208 L195 206" stroke="#D7374C" stroke-width="2.2"/>
-      <path d="M276 194 L261 213 L243 216 L229 241 L215 244" stroke="#131822" stroke-width="7"/>
-      <path d="M276 194 L261 213 L243 216 L229 241 L215 244" stroke="#D7374C" stroke-width="2.2"/>
-      <g fill="#F04459" stroke="#171A22" stroke-width="1.7">
-        <circle cx="240" cy="142" r="3.4"/><circle cx="230" cy="170" r="3.4"/>
-        <circle cx="232" cy="190" r="3.4"/><circle cx="243" cy="216" r="3.4"/>
-      </g>
-    </g>
-    <use href="#legs-left" transform="translate(560 0) scale(-1 1)" />
+SPIDER_ART = '''<g id="spiderman-mask" aria-hidden="true">
+  <!-- Recognizable red mask silhouette with web strands and expressive white lenses -->
+  <circle cx="280" cy="166" r="57" fill="none" stroke="#ED3D57" stroke-width="1.4" opacity=".28"/>
+  <path d="M242 245 C240 224 252 209 264 203 L273 195 L287 195 L297 203 C309 209 320 225 318 245 Z"
+        fill="#101F35" stroke="#D43754" stroke-width="2.3" stroke-linejoin="round"/>
+  <path d="M243 243 C248 223 255 216 266 210 L270 221 L259 245 Z" fill="#D52D48"/>
+  <path d="M317 243 C312 223 305 216 294 210 L290 221 L301 245 Z" fill="#D52D48"/>
+  <path d="M265 209 L280 223 L295 209" fill="none" stroke="#EA4B61" stroke-width="1.5"/>
+  <path d="M278 219 Q280 215 282 219 L283 226 L280 230 L277 226Z" fill="#DB304A"/>
+  <path d="M278 223 l-7 -5 m7 6 l-10 0 m9 3 l-8 6 m13 -10 l7 -5 m-7 6 l10 0 m-9 3 l8 6" fill="none" stroke="#F1455C" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M271 190 L269 208 L280 215 L291 208 L289 190 Z" fill="#B82038" stroke="#10151D" stroke-width="2"/>
+  <path d="M280 111 C258 111 248 128 246 149 C244 168 254 186 267 194 C276 200 284 200 293 194 C306 186 316 168 314 149 C312 128 302 111 280 111Z"
+        fill="url(#heroMask)" stroke="#0F1520" stroke-width="4.2" stroke-linejoin="round"/>
+  <path d="M256 135 Q262 117 277 117" fill="none" stroke="#FF6479" stroke-width="2.1" opacity=".7" stroke-linecap="round"/>
+  <g stroke="#611424" stroke-width="1.35" opacity=".85" fill="none" stroke-linecap="round">
+    <path d="M280 114L280 193 M280 141L249 128 M280 141L311 128 M280 141L247 147 M280 141L313 147 M280 141L251 170 M280 141L309 170 M280 141L266 191 M280 141L294 191"/>
+    <path d="M253 131Q280 144 307 131 M248 145Q280 159 312 145 M249 164Q280 173 311 164 M259 182Q280 187 301 182"/>
   </g>
-  <path d="M280 163 C265 163 263 172 264 184 C264 200 273 217 280 219 C287 217 296 200 296 184 C297 172 295 163 280 163Z"
-        fill="url(#spiderBody)" stroke="#F24A62" stroke-width="2"/>
-  <path d="M280 168 L280 209 M269 176 Q280 184 291 176 M270 190 Q280 198 290 190"
-        fill="none" stroke="#F4556C" stroke-width="1.5" opacity=".65"/>
-  <path d="M280 174 L275 186 L280 193 L285 186Z" fill="#EF3751"/>
-  <path d="M280 155 C269 156 268 169 272 176 L280 179 L288 176 C292 169 291 156 280 155Z"
-        fill="#CB2942" stroke="#FC6275" stroke-width="1.3"/>
-  <path d="M280 134 C267 134 263 144 266 153 C270 163 276 166 280 167 C284 166 290 163 294 153 C297 144 293 134 280 134Z"
-        fill="url(#spiderMask)" stroke="#FB5870" stroke-width="1.6"/>
-  <path d="M280 137V161 M270 143L280 154L290 143 M267 150L279 158L291 150"
-        fill="none" stroke="#BE2D46" stroke-width="1" opacity=".9"/>
-  <path d="M270 150 Q272 145 278 150 Q276 155 271 155Z" fill="#F2FCFF"/>
-  <path d="M290 150 Q288 145 282 150 Q284 155 289 155Z" fill="#F2FCFF"/>
-  <path d="M270 150L277 153 M290 150L283 153" stroke="#C3E8F6" stroke-width=".7"/>
+  <path d="M252 146 Q263 145 276 154 Q274 166 266 171 Q256 169 251 161Z" fill="#F7FBFF" stroke="#0A111D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M308 146 Q297 145 284 154 Q286 166 294 171 Q304 169 309 161Z" fill="#F7FBFF" stroke="#0A111D" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M255 151 Q264 152 272 157 M305 151 Q296 152 288 157" fill="none" stroke="#BEE7F2" stroke-width="1.3" opacity=".8"/>
+  <path d="M273 181 Q280 183 287 181" fill="none" stroke="#8B1B2E" stroke-width="1.5"/>
 </g>'''
 
 
@@ -248,6 +238,9 @@ def render(days, today, theme="dark"):
         </linearGradient>
         <linearGradient id="spiderMask" x1="0" y1="0" x2="1" y2="1">
           <stop stop-color="#D83B55"/><stop offset=".4" stop-color="#8F1D36"/><stop offset="1" stop-color="#131924"/>
+        </linearGradient>
+      <linearGradient id="heroMask" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#FC405B"/><stop offset=".45" stop-color="#D32A46"/><stop offset="1" stop-color="#9F1F3B"/>
         </linearGradient>
       </defs>
 
