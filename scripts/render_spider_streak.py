@@ -115,6 +115,41 @@ def streak_stats(days, today):
     return current, longest, streak_dates
 
 
+SPIDER_ART = '''<g id="spider-mascot" aria-hidden="true">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g id="legs-left">
+      <path d="M274 164 L260 149 L240 142 L220 112 L206 109" stroke="#131822" stroke-width="7"/>
+      <path d="M274 164 L260 149 L240 142 L220 112 L206 109" stroke="#D7374C" stroke-width="2.2"/>
+      <path d="M270 171 L248 163 L230 170 L207 157 L194 161" stroke="#131822" stroke-width="7"/>
+      <path d="M270 171 L248 163 L230 170 L207 157 L194 161" stroke="#D7374C" stroke-width="2.2"/>
+      <path d="M270 183 L250 193 L232 190 L210 208 L195 206" stroke="#131822" stroke-width="7"/>
+      <path d="M270 183 L250 193 L232 190 L210 208 L195 206" stroke="#D7374C" stroke-width="2.2"/>
+      <path d="M276 194 L261 213 L243 216 L229 241 L215 244" stroke="#131822" stroke-width="7"/>
+      <path d="M276 194 L261 213 L243 216 L229 241 L215 244" stroke="#D7374C" stroke-width="2.2"/>
+      <g fill="#F04459" stroke="#171A22" stroke-width="1.7">
+        <circle cx="240" cy="142" r="3.4"/><circle cx="230" cy="170" r="3.4"/>
+        <circle cx="232" cy="190" r="3.4"/><circle cx="243" cy="216" r="3.4"/>
+      </g>
+    </g>
+    <use href="#legs-left" transform="translate(560 0) scale(-1 1)" />
+  </g>
+  <path d="M280 163 C265 163 263 172 264 184 C264 200 273 217 280 219 C287 217 296 200 296 184 C297 172 295 163 280 163Z"
+        fill="url(#spiderBody)" stroke="#F24A62" stroke-width="2"/>
+  <path d="M280 168 L280 209 M269 176 Q280 184 291 176 M270 190 Q280 198 290 190"
+        fill="none" stroke="#F4556C" stroke-width="1.5" opacity=".65"/>
+  <path d="M280 174 L275 186 L280 193 L285 186Z" fill="#EF3751"/>
+  <path d="M280 155 C269 156 268 169 272 176 L280 179 L288 176 C292 169 291 156 280 155Z"
+        fill="#CB2942" stroke="#FC6275" stroke-width="1.3"/>
+  <path d="M280 134 C267 134 263 144 266 153 C270 163 276 166 280 167 C284 166 290 163 294 153 C297 144 293 134 280 134Z"
+        fill="url(#spiderMask)" stroke="#FB5870" stroke-width="1.6"/>
+  <path d="M280 137V161 M270 143L280 154L290 143 M267 150L279 158L291 150"
+        fill="none" stroke="#BE2D46" stroke-width="1" opacity=".9"/>
+  <path d="M270 150 Q272 145 278 150 Q276 155 271 155Z" fill="#F2FCFF"/>
+  <path d="M290 150 Q288 145 282 150 Q284 155 289 155Z" fill="#F2FCFF"/>
+  <path d="M270 150L277 153 M290 150L283 153" stroke="#C3E8F6" stroke-width=".7"/>
+</g>'''
+
+
 def render(days, today, theme="dark"):
     streak, longest, streak_dates = streak_stats(days, today)
 
@@ -127,10 +162,9 @@ def render(days, today, theme="dark"):
 
     ink = "#F1F1F1" if theme == "dark" else "#202124"
     muted = "#D1D1D1" if theme == "dark" else "#50545A"
-    thread = "#888888" if theme == "dark" else "#6E7379"
-    inactive = "#626262" if theme == "dark" else "#858B91"
-    divider = "#646464" if theme == "dark" else "#B7BCC1"
-    leg = "#D5D5D5" if theme == "dark" else "#383D43"
+    thread = "#668096" if theme == "dark" else "#8399AD"
+    inactive = "#435064" if theme == "dark" else "#A4ADB9"
+    divider = "#668096" if theme == "dark" else "#8399AD"
 
     cx, cy = 280, 165
     angles = [
@@ -154,7 +188,7 @@ def render(days, today, theme="dark"):
         )
         web.append(
             f'<polygon points="{points}" fill="none" '
-            f'stroke="{thread}" stroke-width=".9" opacity=".7"/>'
+            f'stroke="{thread}" stroke-width="1" opacity=".36" stroke-linejoin="round"/>'
         )
 
     for angle in angles:
@@ -162,7 +196,7 @@ def render(days, today, theme="dark"):
         web.append(
             f'<line x1="{cx}" y1="{cy}" '
             f'x2="{x:.1f}" y2="{y:.1f}" '
-            f'stroke="{thread}" stroke-width=".9" opacity=".7"/>'
+            f'stroke="{thread}" stroke-width=".9" opacity=".26"/>'
         )
 
     # Each ring contains seven days. Inner rings are older.
@@ -199,59 +233,7 @@ def render(days, today, theme="dark"):
                 f'stroke="{ink}" stroke-width="1.25"/>'
             )
 
-    # Four segmented legs on each side, clear of the data dots.
-    legs = []
-
-    for direction in (-1, 1):
-        paths = (
-            ((9, -13), (25, -26), (39, -34), (54, -49)),
-            ((12, -6), (30, -14), (47, -12), (65, -19)),
-            ((12, 3), (31, 8), (47, 17), (65, 23)),
-            ((9, 12), (25, 26), (39, 35), (54, 48)),
-        )
-
-        for root, knee, joint, tip in paths:
-            coords = [
-                (cx + direction * x, cy + y)
-                for x, y in (root, knee, joint, tip)
-            ]
-            proximal = " ".join(
-                f"{x:.0f},{y:.0f}" for x, y in coords[:3]
-            )
-            distal = " ".join(
-                f"{x:.0f},{y:.0f}" for x, y in coords[2:]
-            )
-
-            legs.append(
-                f'<polyline points="{proximal}" fill="none" '
-                f'stroke="{leg}" stroke-width="3.5" '
-                f'stroke-linecap="round" stroke-linejoin="round"/>'
-            )
-            legs.append(
-                f'<polyline points="{distal}" fill="none" '
-                f'stroke="{leg}" stroke-width="1.7" '
-                f'stroke-linecap="round"/>'
-            )
-            legs.append(
-                f'<circle cx="{coords[1][0]}" cy="{coords[1][1]}" '
-                f'r="1.8" fill="#B53849"/>'
-            )
-
-    spider = f'''<g>{''.join(legs)}
-      <path d="M280 157v4" stroke="#8F6266" stroke-width="4"/>
-      <ellipse cx="280" cy="180" rx="15" ry="20"
-        fill="#362126" stroke="#A45B65" stroke-width="1.2"/>
-      <path d="M280 164c-5 5-7 12-4 17l4-4 4 4c3-5 1-12-4-17z"
-        fill="#B63848"/>
-      <path d="M272 189q8 5 16 0"
-        fill="none" stroke="#8F515B" stroke-width="1"/>
-      <ellipse cx="280" cy="148" rx="11" ry="9"
-        fill="#48262C" stroke="#A96670" stroke-width="1.1"/>
-      <circle cx="276" cy="146" r="1.15" fill="#D7BEC1"/>
-      <circle cx="279" cy="144" r="1.15" fill="#D7BEC1"/>
-      <circle cx="282" cy="144" r="1.15" fill="#D7BEC1"/>
-      <circle cx="285" cy="146" r="1.15" fill="#D7BEC1"/>
-    </g>'''
+    spider = SPIDER_ART
 
     # No background rectangle: GitHub's page color shows through.
     return f'''<svg xmlns="http://www.w3.org/2000/svg"
@@ -260,12 +242,24 @@ def render(days, today, theme="dark"):
       aria-label="Nirmal Kharal: {streak} day contribution streak,
       all-time high {longest} days">
       <title>Nirmal's Spider Streak</title>
+      <defs>
+        <linearGradient id="spiderBody" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#4A1A29"/><stop offset=".55" stop-color="#17202A"/><stop offset="1" stop-color="#090E17"/>
+        </linearGradient>
+        <linearGradient id="spiderMask" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#D83B55"/><stop offset=".4" stop-color="#8F1D36"/><stop offset="1" stop-color="#131924"/>
+        </linearGradient>
+      </defs>
 
-      <rect x="28" y="24" width="4" height="15"
-        rx="2" fill="#E34454"/>
-      <text x="43" y="37" font-size="14" font-weight="700"
-        fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
+      <rect x="29" y="22" width="4" height="17"
+        rx="2" fill="#F04459"/>
+      <text x="44" y="37" font-size="15" font-weight="700"
+        letter-spacing="1" fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
         SPIDER STREAK
+      </text>
+      <text x="28" y="57" font-size="10" letter-spacing=".9"
+        fill="{muted}" font-family="DejaVu Sans,Arial,sans-serif">
+        THE WEB NEVER SLEEPS
       </text>
 
       <g>{''.join(web)}{''.join(nodes)}{spider}</g>
@@ -273,26 +267,30 @@ def render(days, today, theme="dark"):
       <text x="280" y="296" text-anchor="middle"
         font-size="11" fill="{muted}"
         font-family="DejaVu Sans,Arial,sans-serif">
-        35 DAYS · INNER → OUTER · OUTLINED = STREAK
+        35-DAY WEB · RINGS = WEEKS
       </text>
 
-      <path d="M527 71V274" stroke="{divider}" stroke-width="1"/>
+      <path d="M527 78V276" stroke="{divider}" opacity=".46" stroke-width="1"/>
 
-      <text x="566" y="102" font-size="13" font-weight="700"
-        fill="{muted}" font-family="DejaVu Sans,Arial,sans-serif">
-        STREAK · DAYS IN A ROW
+      <text x="565" y="107" font-size="13" font-weight="700"
+        letter-spacing="1.1" fill="{muted}" font-family="DejaVu Sans,Arial,sans-serif">
+        CURRENT STREAK
       </text>
 
-      <text x="557" y="212" font-size="116" font-weight="800"
+      <text x="556" y="224" font-size="118" font-weight="800"
         fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
         {streak}
       </text>
 
-      <path d="M566 231H852" stroke="#D83A4C" stroke-width="2"/>
+      <path d="M565 237H843" stroke="#F04459" stroke-width="2.5"/>
 
-      <text x="566" y="267" font-size="15" fill="{ink}"
-        font-family="DejaVu Sans,Arial,sans-serif">
-        ALL-TIME HIGH · {longest} DAYS
+      <text x="565" y="272" font-size="13" font-weight="600"
+        letter-spacing=".45" fill="{muted}" font-family="DejaVu Sans,Arial,sans-serif">
+        ALL-TIME HIGH
+      </text>
+      <text x="839" y="272" text-anchor="end" font-size="17" font-weight="800"
+        fill="{ink}" font-family="DejaVu Sans,Arial,sans-serif">
+        {longest} DAYS
       </text>
     </svg>'''
 
