@@ -5,15 +5,22 @@ import json
 import math
 import os
 from pathlib import Path
-import sys
 import urllib.request
 from zoneinfo import ZoneInfo
 
 USERNAME = "kharalnirmal"
 
-QUERY = """query($login: String!) {
+# GitHub's default contribution calendar covers only about one year.
+# Query each contribution year so the record includes the entire account history.
+YEARS_QUERY = """query($login: String!) {
   user(login: $login) {
-    contributionsCollection {
+    contributionsCollection { contributionYears }
+  }
+}"""
+
+YEAR_QUERY = """query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
+    contributionsCollection(from: $from, to: $to) {
       contributionCalendar {
         weeks { contributionDays { date contributionCount } }
       }
@@ -22,10 +29,10 @@ QUERY = """query($login: String!) {
 }"""
 
 
-def fetch_days():
+def graphql_user(query, variables):
     payload = json.dumps({
-        "query": QUERY,
-        "variables": {"login": USERNAME},
+        "query": query,
+        "variables": variables,
     }).encode()
 
     request = urllib.request.Request(
@@ -45,42 +52,76 @@ def fetch_days():
         raise RuntimeError(
             f"Contribution query failed: {result.get('errors')}"
         )
+    return result["data"]["user"]
 
-    weeks = result["data"]["user"]["contributionsCollection"][
-        "contributionCalendar"
-    ]["weeks"]
 
-    return {
-        dt.date.fromisoformat(day["date"]): day["contributionCount"]
-        for week in weeks
-        for day in week["contributionDays"]
-    }
+def fetch_days():
+    user = graphql_user(YEARS_QUERY, {"login": USERNAME})
+    years = sorted(set(user["contributionsCollection"]["contributionYears"]))
+    now = dt.datetime.now(dt.timezone.utc)
+    days = {}
+
+    for year in years:
+        start = dt.datetime(year, 1, 1, tzinfo=dt.timezone.utc)
+        # Never request future dates or a range longer than a calendar year.
+        end = min(
+            dt.datetime(year + 1, 1, 1, tzinfo=dt.timezone.utc)
+            - dt.timedelta(seconds=1),
+            now,
+        )
+        if start > end:
+            continue
+
+        user = graphql_user(YEAR_QUERY, {
+            "login": USERNAME,
+            "from": start.isoformat().replace("+00:00", "Z"),
+            "to": end.isoformat().replace("+00:00", "Z"),
+        })
+        weeks = user["contributionsCollection"]["contributionCalendar"]["weeks"]
+
+        for week in weeks:
+            for day in week["contributionDays"]:
+                date = dt.date.fromisoformat(day["date"])
+                if date.year == year:
+                    days[date] = day["contributionCount"]
+
+    return days
+
+
+def streak_stats(days, today):
+    # A streak remains current until the end of today if yesterday was active.
+    cursor = today if days.get(today, 0) > 0 else today - dt.timedelta(days=1)
+    current = 0
+    streak_dates = set()
+    while days.get(cursor, 0) > 0:
+        current += 1
+        streak_dates.add(cursor)
+        cursor -= dt.timedelta(days=1)
+
+    # The historical best persists even if the current streak ends.
+    longest = 0
+    run = 0
+    previous = None
+    for date, count in sorted(days.items()):
+        if date > today or count <= 0:
+            continue
+        if previous is not None and date - previous == dt.timedelta(days=1):
+            run += 1
+        else:
+            run = 1
+        longest = max(longest, run)
+        previous = date
+
+    return current, longest, streak_dates
 
 
 def render(days, today, theme="dark"):
-    # Today is unfinished. If it has no activity yet, start from yesterday.
-    current = (
-        today
-        if days.get(today, 0) > 0
-        else today - dt.timedelta(days=1)
-    )
-
-    streak = 0
-    while days.get(current, 0) > 0:
-        streak += 1
-        current -= dt.timedelta(days=1)
-
-    streak_dates = {
-        current + dt.timedelta(days=i)
-        for i in range(1, streak + 1)
-    }
+    streak, longest, streak_dates = streak_stats(days, today)
 
     history = [
         days.get(today - dt.timedelta(days=34 - i), 0)
         for i in range(35)
     ]
-    active = sum(count > 0 for count in history)
-
     if theme not in ("dark", "light"):
         raise ValueError("theme must be dark or light")
 
@@ -217,7 +258,7 @@ def render(days, today, theme="dark"):
       width="900" height="320" viewBox="0 0 900 320"
       role="img"
       aria-label="Nirmal Kharal: {streak} day contribution streak,
-      {active} active days out of 35">
+      all-time high {longest} days">
       <title>Nirmal's Spider Streak</title>
 
       <rect x="28" y="24" width="4" height="15"
@@ -251,7 +292,7 @@ def render(days, today, theme="dark"):
 
       <text x="566" y="267" font-size="15" fill="{ink}"
         font-family="DejaVu Sans,Arial,sans-serif">
-        ACTIVITY · {active} OF LAST 35 DAYS
+        ALL-TIME HIGH · {longest} DAYS
       </text>
     </svg>'''
 
