@@ -2,6 +2,11 @@ name: Update Spider Streak
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/spider-streak-dark.svg"
+      - "assets/spider-streak-light.svg"
   schedule:
     - cron: "17 */6 * * *"
 
@@ -10,6 +15,7 @@ permissions:
 
 jobs:
   update:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
